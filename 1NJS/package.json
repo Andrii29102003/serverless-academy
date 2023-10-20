@@ -1,0 +1,6 @@
+{
+    "name": "app.js",
+    "dependencies": {
+        "prompt-sync": "^4.2.0"
+    }
+}
