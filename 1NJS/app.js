@@ -39,7 +39,6 @@ function showOnlyUniqueWords(arr){
 //get values from user
 rl.question("Hi, please write 10 values separated by space: ", (answer) => {
     mainLoop(answer.split(" "));
-    rl.close();
 });
 
 //function mainLoop
@@ -57,12 +56,10 @@ function mainLoop(values){
     console.log("5. Only unique words");
     rl.question("Your choice: ", (answer) => {
         if(redirector(answer, values) === 1){
-            console.log("Goodbye!");
+            rl.close();
             return;
         }
     });
-    console.log("BBBBBB");
-    return;
 }
 
 
