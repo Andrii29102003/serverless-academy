@@ -35,7 +35,7 @@ function addPerson(){
         }
         return "doExit";
     }
-    person.gender = prompt("Chose your gender: ");
+    person.gender = prompt("Chose your gender[M/F] : ");
     person.age = parseInt(prompt("Enter your age: "));
     
     loadDB();
@@ -49,7 +49,7 @@ function showDB(){
     console.log(data);
     askName = prompt("Enter the user`s name you want to search in database: ");
     for(const person of data){
-        if(person.name === askName){
+        if(person.name.toUpperCase() == askName.toUpperCase()){
             console.log(person);
             return;
         }
@@ -58,6 +58,8 @@ function showDB(){
 }
 
 
+
+//main loop
 while(true){
     if(addPerson() === "doExit"){
         break;

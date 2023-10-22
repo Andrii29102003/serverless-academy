@@ -1,1 +1,1 @@
-[{"name":"Andrii","gender":"m","age":20},{"name":"a","gender":"a","age":1},{"name":"df","gender":"f","age":12},{"name":"fgh","gender":"e","age":45},{"name":"asr","gender":"m","age":34},{"name":"as","gender":"r","age":43},{"name":"djffj","gender":"f","age":45}]
+[{"name":"Petro","gender":"M","age":20}]
