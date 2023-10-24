@@ -33,6 +33,14 @@ bot.onText(/\/start/, (msg) => {
  
 });
 
+if((args[0] === '--help') || (args[0] === '-h') || (args[0] === 'help')){
+    console.log('m - send message to all users');
+    console.log('p - send photo to all users');
+    console.log('node app.js m "Hello world"');
+    console.log('node app.js p "path to photo"');
+    process.exit(0);    
+}
+
 loadData();
 
 
