@@ -1,0 +1,6 @@
+{
+    "name": "app.js",
+    "dependencies": {
+        "node-telegram-bot-api": "^0.63.0"
+      }
+}
