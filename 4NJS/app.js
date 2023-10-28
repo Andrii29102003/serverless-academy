@@ -53,9 +53,9 @@ bot.onText(/\/start/, (msg) => {
     //add options to bot
     bot.sendMessage(msg.chat.id, "Choose frequency of weather send", options);
 });
-bot.on("callback_query", (callbackQuery) => {
-    bot.sendMessage(callbackQuery.message.chat.id, "You have chosen " + callbackQuery.data);
-    const selectedOption = callbackQuery.data;
+bot.on("callback_query", function (msg) {
+    bot.sendMessage(callbackQuery.message.chat.id, "You have chosen " + msg.data);
+    const selectedOption = msg.data;
     const chatId = msg.chat.id;
     user = {};
     user.chatId = chatId;
@@ -100,4 +100,5 @@ async function sendForecast(){
 
 //start sending forecast
 sendForecast();
+console.log("Bot started");//DEL
 
