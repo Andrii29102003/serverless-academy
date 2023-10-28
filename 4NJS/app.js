@@ -55,6 +55,7 @@ bot.onText(/\/start/, (msg) => {
 });
 bot.on("callback_query", function (msg) {
     bot.sendMessage(callbackQuery.message.chat.id, "You have chosen " + msg.data);
+    bot.answerCallbackQuery(msg.id, "You have chosen " + msg.data);
     const selectedOption = msg.data;
     const chatId = msg.chat.id;
     user = {};
