@@ -3,12 +3,13 @@ const axios = require('axios').default;
 const fs = require('fs');
 
 
-const apiKey = "01767cd7f300e35d8433c5d83e3695c4"
+const apiKey = "" //weather API key
 const city = "Vinnytsia";
 const generalURL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 const frequencyOfCheck = 600000; //10 min = 600000 ms
 
-const bot = new TelegramBot("6756857724:AAEtGxLZoyKTy4JsUid9aBSAQnhMtyl9F7k", {polling: true});
+const telegramAPIKey = ""; //telegram API key
+const bot = new TelegramBot(telegramAPIKey, {polling: true});
 var usersDB = [];
 const usersDBFileName = "usersDB.json";
 //create file if not exists
