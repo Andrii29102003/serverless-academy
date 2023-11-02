@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
-const TelegramAPIKey = '6965063003:AAF1SOHRZJd_yc0buDgmpAAd9p-EfL85YmU';
+const TelegramAPIKey = ''; // Telegram API Key
 const BankAPIURL = 'https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11';
 const options = {
     reply_markup: {
